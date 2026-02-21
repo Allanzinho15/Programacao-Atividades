@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #pre-definidas{
+            color: deeppink;
+        }
+
+        #current-color{
+            color: coral;
+            border: 2px solid currentColor;
+        } */
+
+         #current-color{
+            color: deeppink
+           
+        }
+        #rgb{
+            color: rgb(165, 120, 91);
+        }
+
+        #rgba{
+            color: rgba(255, 0, 0, 0.5);
+        }
+        #hex{
+            color: #00ff00;
+        }
+        #hex-transparencia{
+            color: #ff00ff50;
+        }
+
+        #hsl{
+            color: hsl(0, 100%, 50%);
+        }
+
+        #hsla{
+            background: hsla(0, 100%, 30%, .5);
+        }
+    </style>
+</head>
+<body>
+    <h1>cores</h1>
+    <p>existem várias formas de dedinirmos cores utilizando o CSS. elas são</p>
+    <ul>
+        <li id="pre-definidas">cores pré-definidas</li>
+        <li id="current-color">palavras-chave "currentcolor"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadacimal com trasparênte</li>
+        <li id="rgb">rgb</li>
+        <li id="rgba">rgba</li>
+        <li id="hsl">hsl</li>
+        <li id="hsla">hsla</li>
+    </ul>
+    <hr>
+    <h2>HLS</h2>
+    <code>hsl(hue, saturation, lightness)</code>
+    <ul>
+        <li><b>Hue (matiz):</b> é o grau na roda de cores (de 0 a 360 graus)</li>
+        <ul>
+            <li>0 ou 360 é vermelho</li>
+            <li>120 é verde</li>
+            <li>240 é azul</li>
+        </ul>
+        <li><b>Saturation(saturação):</b> valor percentual</li>
+        <ul>
+            <li>0% um tom de cinza</li>
+            <li>100% cor total</li>
+        </ul>
+        <li><b>Lightness(lumunosidade):</b> luminosidade da cor</li>
+        <ul>
+            <li>0% é preto</li>
+            <li>100% é branco</li>
+        </ul>
+    </ul>
+</body>
+</html>

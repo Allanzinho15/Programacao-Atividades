@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/02.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>login</h1>
+                <p>seja bem-vindo(a) novamente. faça login para acessar sua conta e poder fazer as configurações no seu ambiente</p>
+                <form action="login.php" method="post">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            person
+                            </span>
+                        <input type="email" name="login" id="ilogin" placeholder="seu e-mail" >
+                        <label for="ilogin" autocomplete="email" required  maxlength="30">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            vpn_key
+                            </span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required maxlength="8" minlength="15">
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <div class="enter">
+                        <input type="submit" value="entrar">
+                        <input type="reset" value="limpar">
+                    </div>
+                    <div class="a2">
+                        <a href="esqueçe a senha">Esquece a senha  <span class="material-symbols-outlined">mail</span> </a>
+                    </div>
+                    
+                </form>
+            
+
+            </div>
+        </section>
+    </main>
+    <script>
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+    
+
+body{
+    background-color: black;
+}
+#id2{
+    background-color: aqua;
+    margin: auto;
+    border-radius: 5px;
+    margin: 10px;
+
+}
+.div2{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+
+}
+.text1{
+    display: flex;
+    justify-content: center;
+}

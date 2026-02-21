@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <h1>venha saber se voçê esta acima do peso</h1>
+    <div>
+        <input type="number" name="peso1" id="ob1">
+        <input type="button" value="grau da obesidade" onclick="clickar()">
+        <div id="obs">grau da obesidade....</div>
+        <script>
+
+            function clickar(){
+                let peso1 = window.document.getElementById("ob1")
+                let obesi = window.document.getElementById("obs")
+                let resul = Number(peso1.value)
+                obesi.innerHTML = (`grau da obesidade.... `)
+                if(resul <= 55){
+                    obs.innerHTML = `esta com desnutrição` 
+                }else if (resul <= 75){
+                    obs.innerHTML = `esta com peso normal `
+                }else if (resul <= 85){
+                    obs.innerHTML = `esta com sobrepeso `
+                }else if (resul <= 100){
+                    obs.innerHTML = `esta com obesidade`
+                }else{
+                    obs.innerHTML = `esta com obesidade grau II`
+                }
+            }
+            
+        </script>
+    </div>
+</body>
+</html>

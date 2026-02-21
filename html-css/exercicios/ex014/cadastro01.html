@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de cadastro</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{ 
+            background-color: cadetblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .allan{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: aqua;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 400px;
+            height: 400px;
+           
+        }
+        div{
+            padding: 15px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>cadastro</h1>
+    <div class="allan">
+        
+        <form action="" method="post" autocomplete="off">
+            <div>
+                <label for="iusuario">Usuario</label>
+                <input type="text" name="usuario" id="iusuario" required minlength="10" maxlength="15" placeholder="Nome Do Usuario">
+            </div>
+            <div>
+                <label for="isenha">Senha</label>
+                <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" placeholder="Senha Do Usuario">
+            </div>
+            <div>
+                <input type="submit" value="ENVIAR">
+                <input type="reset" value="EXCLUIR">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

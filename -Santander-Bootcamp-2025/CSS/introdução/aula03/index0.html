@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        *SELETORES: definem em quais elementos nós vamos aplicar o CSS
+        *1. Seletor de Tag/tipo
+        *2. Seletor de classes
+        *3. Seletor de ID
+        *4. Seletor Universal
+        *5. Seletor de atributo 
+        */
+
+
+        /* [atrib] */
+
+        /* [href^="valor"] */
+       [href^="http://"]{
+        background: lightgreen;
+       }
+
+       /* [href$="valor"] */
+       [href$="login"]{
+        background-color: cadetblue;
+
+       }
+       /* [href*="valor"] */
+       [href*="login"]{
+        background:red ;
+       }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a title="Netflix" href="http://www.netflix.com/browse">Netflix</a>
+            </li>
+            <li><a title="Streaming Prime" href="https://www.primevideo.comlogin">Prime</a>
+            </li>
+            <li><a title="Streaming-Spotify" href="https://login.open.spotify.com/">Spotify</a>
+            </li>
+            <li><a title="Disney">Disney Plus</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calculadora.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <div>
+        <input type="text" name="caixa" id="caixa1" disabled>
+        <br>
+
+
+        <button onclick="clicarNumero(`7`)">7</button>
+        <button onclick="clicarNumero(`8`)">8</button>
+        <button onclick="clicarNumero(`9`)">9</button>
+        <br>
+
+        <button onclick="clicarNumero(`4`)">4</button>
+        <button onclick="clicarNumero(`5`)">5</button>
+        <button onclick="clicarNumero(`6`)">6</button>
+        <br>
+
+        <button onclick="clicarNumero(`1`)">1</button>
+        <button onclick="clicarNumero(`2`)">2</button>
+        <button onclick="clicarNumero(`3`)">3</button>
+        <br>
+
+        <button onclick="clicarNumero(`0`)">0</button>
+        <button onclick="limpar(`c`)">c</button>
+        <button onclick="calcular()">=</button>
+        <br>
+
+        <button onclick="operador(`+`)">+</button>
+        <button onclick="operador(`-`)">-</button>
+        <button onclick="operador(`*`)">*</button>
+        <button onclick="operador(`/`)">/</button>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>

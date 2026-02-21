@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+} 
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 5px;
+}
+section{
+    display: flex;
+    flex-flow: column nowrap;
+    border: 3px solid white;
+    width: 500px;
+    text-align: center;
+    gap: 10px;
+    padding: 15px;
+
+    & #submit{
+        margin-left: auto;
+        margin-right: auto;
+        width: 70px;
+    }
+
+}

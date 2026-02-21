@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+       <style>
+        /* Combinadores: qual tipo de ralação entre 2 seletores.
+        1. Conbinador descendente (espaço)
+        2. Combinador filho (>)
+        3. Combinador irmão adjacente (+)
+        3. Combinador irmão em geral (~)
+
+        [SELETOR] [COMBINADOR] [SELETOR]
+        */
+
+        .fundo-verde span ~ p{
+            color: green;
+        }
+        
+        .fundo-verde p + p{
+            color: green;
+        }
+        
+        .fundo-verde span + p{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo-verde">
+        <p>Elemento 01</p>
+        <p>Elemento 02</p>
+        <span>
+            <p>Elemento 03</p>
+            <p>Elemento 04</p>
+        </span>
+        <p>Elemento 05</p>
+        <p>Elemento 06</p>
+    </div>
+</body>
+</html>

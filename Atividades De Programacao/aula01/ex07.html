@@ -1,0 +1,41 @@
+|<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font: normal 18px Arial;
+
+        }
+        input{
+            font: normal 18px Arial;
+            width: 100px;
+        }
+        #res{
+            margin-top: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>somando valor</h1>
+    <input type="number" name="texto00" id="texto00">
+    <input type="number" name="texto01" id="texto01">
+    <input type="button" value="somar" onclick="somar()">
+    <div id="res">resultado...</div>
+    <script>
+        function somar(){
+            let T01 = window.document.getElementById("texto00")
+            let T02 = window.document.getElementById("texto01")
+            let res = window.document.getElementById("res")
+            let x01 = Number(T01.value)
+            let x02 = Number(T02.value)
+            let s = x01 + x02 
+            res.innerHTML = `A soma entre ${x01} e ${x02} é igaul a ${s}`
+
+        }
+    </script>
+</body>
+</html>

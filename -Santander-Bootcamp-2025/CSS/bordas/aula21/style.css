@@ -1,0 +1,26 @@
+@charset "UTF8";
+
+*{
+    font-family: Roboto;
+}
+.exemplo{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 30px solid;
+    margin: 50px auto;
+}
+#exemplo-1{
+    /* border-image-source: linear-gradient(red, blue);
+    border-image-repeat: repeat;
+    border-image-slice: 10 ;
+    border-image-width: 10px 20px 30px 40px;
+    border-image-outset: 1; */
+
+    /* forma resumida  */
+    border-image: linear-gradient(red, blue) 10 / 10px / 1 round;
+
+}
+#exemplo-2{
+
+}

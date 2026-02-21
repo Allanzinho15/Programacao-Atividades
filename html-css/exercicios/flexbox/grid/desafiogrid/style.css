@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+ *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+.container{
+    width: 100vw;
+    height:100vh;
+    display:grid;
+    text-align: center;
+    grid-template-rows: 80px 40px 1fr 40px;
+    grid-template-columns: 1fr 350px;
+    grid-template-areas: 
+    "topo topo"
+    "menu menu"
+    "principal secundario"
+    "rodaper rodaper";
+   
+
+    .caixa{
+        background-color: lightgrey;
+        border: 1px solid black;
+
+    }
+
+    #topo{
+        grid-area: topo; 
+    }
+    #menu{
+        grid-area: menu;
+    }
+    #principal{
+        grid-area: principal;
+    }
+    #secundario{
+        grid-area: secundario;
+    }
+    #rodaper{
+        grid-area:rodaper;
+    }
+ 
+}

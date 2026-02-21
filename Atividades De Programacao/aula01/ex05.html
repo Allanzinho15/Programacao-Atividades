@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+          margin: 0px;
+          padding: 0px;
+          box-sizing: border-box;
+         
+        }
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial; 
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+  
+        }
+        
+        .div33{
+            width: 550px;
+            height: 450px;
+            border: solid 2px black;
+            text-align: center;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="div33">
+        <h1>iniciando estudos DOM</h1>
+        <p>aqui vai o resultado</p>
+        <p>aprendendo a usar o <strong>DOM</strong> em javascript</p>
+        <div id="clique">clique em mim</div>
+    </div>
+   
+    <script>
+        let a1 = window.document.getElementsByTagName("p")[0]
+         // window.document.write(a1.innerText)
+        // a1.style.colar = "greem"
+        // window.document.write(a1.innerHTML)
+        // let b1 = window.document.getElementById("clique")
+        // b1.style.background = "black" 
+        // b1.innerText = "pão de milho"
+        //let c1 = window.document.querySelector(".div33")
+        //c1.style.background = "black"
+       
+
+         
+    </script>
+</body>
+</html>

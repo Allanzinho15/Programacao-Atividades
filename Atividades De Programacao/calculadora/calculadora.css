@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    height: 100vh;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+div{
+    border: 1px solid black;
+    
+
+    & button{
+        font-size: 20px;
+        width: 40px;
+        padding: 5px;
+        margin: 2px;
+    }
+
+    & #caixa1{
+        width: 190px;
+        margin: 3px;
+        height: 25px;
+    }
+
+}

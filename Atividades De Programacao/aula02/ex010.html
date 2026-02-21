@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Sistema de multas</h1>
+    <input type="number" name="km" id="km" />
+    <input type="button" value="verificar" onclick="calcular()" />
+    <div id="res"></div>
+    <script>
+      function calcular() {
+        let km0 = window.document.querySelector("km");
+        let km1 = window.document.querySelector("#res");
+        let km2 = Number(km.value);
+        km1.innerHTML = `<p>sua velocidade atual é de <strong> ${km2}km/h</strong> </p>`;
+        if (km2 > 60) {
+          km1.innerHTML += `velocidade ultrapassada, você foi multado!`;
+        }
+
+        km1.innerHTML += `<p>sempre use cinto de segurança</p>`;
+      }
+    </script>
+  </body>
+</html>

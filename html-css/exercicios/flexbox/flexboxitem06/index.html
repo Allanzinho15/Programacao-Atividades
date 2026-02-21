@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .conteiner{
+            background-color: aquamarine;
+            display: flex;
+            flex-flow: row nowrap;
+
+        }
+        .item{
+            background-color: blueviolet;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 200px;
+        }
+        #A1{
+            flex-shrink: 0;
+            flex-grow: 0;
+            
+        }
+        #B2{
+            flex-shrink: 0;
+            flex-grow: 2;
+
+        }
+        #C3{
+            flex-shrink: 1;
+            flex-grow: 1;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="A1">A</div>
+        <div class="item" id="B2">B</div>
+        <div class="item" id="C3">C</div>
+    </div>
+</body>
+</html>

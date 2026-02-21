@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>identificando se você é estrangeiro ou brasileiro</h1>
+    <p>você esta morando onde ?<input type="text" name="iden" id="iden" /></p>
+    <input type="button" value="verificar" onclick="verificar()" />
+    <div id="br"></div>
+    <script>
+      function verificar() {
+        let iden2 = window.document.getElementById("iden");
+        let bt = window.document.getElementById("br");
+        let but = (iden2.value)
+        bt.innerHTML = `você é ${but}`;
+        if (but === "brasil") {
+          bt.innerHTML = `voçê é brasileiro`;
+        } else {
+          bt.innerHTML = `voçê é estrangeiro`;
+        }
+      }
+    </script>
+  </body>
+</html>
