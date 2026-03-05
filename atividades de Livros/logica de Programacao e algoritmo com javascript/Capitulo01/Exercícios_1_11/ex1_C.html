@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // lê o preço do produto
+    const valorDoProduto = Number(prompt("Valor do Produto R$: "));
+
+    // calcula valores à vista e das parcelas
+    const valorAvista =+ valorDoProduto - (valorDoProduto * 0.10);
+    const valorAPrazo =+ valorDoProduto / 3;
+    // exibe as respostas
+    alert(`Valor do Produto com 10% de desconto R$: ${valorAvista.toFixed(2)}\n Ou 3X de R$: ${valorAPrazo.toFixed(2)}`);
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //lê o valor do produto
+    const valorTotalDaPizza = Number(prompt("Valor da conta R$: "));
+    const quantidadeDeClienteAPagar = Number(prompt("Números de Cliente:"));
+
+    //calcula o valor por cada pessoa 
+    const valorPorPessoa = valorTotalDaPizza / quantidadeDeClienteAPagar;
+
+    // exibe as respostas
+    alert(`Valor por Cliente R$: ${valorPorPessoa.toFixed(2)}`)
+</script>
+</html>

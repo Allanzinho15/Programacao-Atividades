@@ -1,0 +1,116 @@
+@charset "UTF-8";
+:root{
+    --text: #141906;
+    --background: #f8fcf3;
+    --primary: #a2d232;
+    --secondary: #8ae5cd;
+    --accent: #5cc2db;
+}
+:root[data-theme="dark"] {
+    --text: #f4f9e6;
+    --background: #080c03;
+    --primary: #9dcd2d;
+    --secondary: #1a755d;
+    --accent: #248aa3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    /* overflow-x: hidden; */
+
+}
+body{
+    /* overflow-x: hidden; */
+    /* background-color: #0f1401; */
+    grid-template-columns: repeat(4, 1fr); /* Divide em 4 colunas iguais */
+    grid-template-rows: auto 1fr auto;
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'main main main main'
+    'footer footer footer footer';
+}
+p{
+    background-color: var(--text);
+    background-clip: text;
+}
+h1, h2, h3 {
+    display: inline-block;
+    background: linear-gradient( to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-area: header;
+    width: 100%;
+    border: solid 2px black;
+    font-size: 38px;
+    
+}
+main{
+    grid-area: main;
+    
+    width: 100%;
+    border: solid 2px black;
+}
+.divisao-do-card{
+
+    display: flex;
+    justify-content: space-around;
+    height: 450px;
+
+}
+.divisao-do-card  section{
+    position: relative;
+    top: 60px;
+    font-size: 30px;
+    
+}
+.configurando-os-3card {
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.configurando-os-3card  div{
+    width: 300px;
+    height: 200px;
+    background-color: #151C13;
+    border-radius: 6px;
+    border: #5cc2db solid 1px;
+    
+}
+.card-do-valor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+
+}
+.configuiracao-das-imagem{
+    display: flex;
+    margin-top: 10px;
+
+    
+}
+.configuiracao-das-imagem > div >img{
+    width: 100px;
+    border-radius: 50px;
+    padding: 10px
+
+
+}
+footer{
+    grid-area: footer;
+    border: solid 2px black;
+    height: 70vh;
+    width: 100%;
+}
