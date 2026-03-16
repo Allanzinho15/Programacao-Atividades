@@ -21,96 +21,96 @@
 
 }
 body{
-    /* overflow-x: hidden; */
-    /* background-color: #0f1401; */
-    grid-template-columns: repeat(4, 1fr); /* Divide em 4 colunas iguais */
-    grid-template-rows: auto 1fr auto;
+    
     display: grid;
     grid-template-areas:
     'header header header header'
     'main main main main'
     'footer footer footer footer';
 }
-p{
-    background-color: var(--text);
-    background-clip: text;
-}
-h1, h2, h3 {
-    display: inline-block;
-    background: linear-gradient( to right, var(--primary), var(--accent));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
-}
+
 header{
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     grid-area: header;
-    width: 100%;
     border: solid 2px black;
-    font-size: 38px;
+    font-size: 30px;
     
 }
 main{
     grid-area: main;
-    
-    width: 100%;
-    border: solid 2px black;
+    border: solid 2px rgb(209, 29, 29);
+    padding: 150px;
 }
-.divisao-do-card{
-
+section{
+    /* height: 100vh; */
+    margin-top: 200px;
+}
+.imagensDasStreamings img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    margin: 15px;
+}
+.imagensDasStreamings{
     display: flex;
-    justify-content: space-around;
-    height: 450px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.content-text{
+    display: flex ;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    font-size: 24px;
+}
 
-}
-.divisao-do-card  section{
-    position: relative;
-    top: 60px;
-    font-size: 30px;
-    
-}
-.configurando-os-3card {
+.content-card-especificao{
     display: flex;
-    gap: 10px;
-    
-    
+    align-items: center;
+    justify-content: center;
+    column-gap:20px ;
 }
-.configurando-os-3card  div{
-    width: 300px;
+.content-card-especificao div{
+    border: solid 1px black;
     height: 200px;
-    background-color: #151C13;
-    border-radius: 6px;
-    border: #5cc2db solid 1px;
-    
+    width: 350px;
+
 }
-.card-do-valor{
+#preso-cont{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    font-size: 20px;
-
 }
-.configuiracao-das-imagem{
+.content-card-precos{
+
+    border: #080c03 solid;
     display: flex;
-    margin-top: 10px;
-
-    
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 35px;
+    width: 550px;
+    height: 650px;
 }
-.configuiracao-das-imagem > div >img{
-    width: 100px;
-    border-radius: 50px;
+.content-card-precos ul li{
+    margin: 6px;
     padding: 10px
-
-
 }
+.content-card-precos span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+}
+
 footer{
     grid-area: footer;
     border: solid 2px black;
-    height: 70vh;
-    width: 100%;
 }
