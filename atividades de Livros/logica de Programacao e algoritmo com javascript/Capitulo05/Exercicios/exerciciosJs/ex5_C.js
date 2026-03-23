@@ -25,4 +25,4 @@ frm.addEventListener(`submit`, (e) => {
     } else {
         resp2.innerText = `${num} Nào é um Número Perfeito`
     }
-}) 
+}); 
