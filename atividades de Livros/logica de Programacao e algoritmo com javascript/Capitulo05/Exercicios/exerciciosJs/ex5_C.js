@@ -19,10 +19,10 @@ frm.addEventListener(`submit`, (e) => {
     exibir += " (Soma: " + conNum + ")"
 
     resp1.innerText = exibir
-    
+
     if (num == conNum) {
         resp2.innerText = `${num} É um Número Perfeito`
     } else {
         resp2.innerText = `${num} Nào é um Número Perfeito`
     }
-})
+}) 
