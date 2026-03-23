@@ -20,8 +20,16 @@
     /* overflow-x: hidden; */
 
 }
+h1, h2, h3{
+    background: linear-gradient(to right, #E91E63 ,#FF9800);
+    background-clip: text ;
+    color: transparent;
+}
+p{
+    color: #A1A1AA;
+}
 body{
-    
+    background: #09090B;
     display: grid;
     grid-template-areas:
     'header header header header'
@@ -36,13 +44,12 @@ header{
     align-items: center;
     flex-direction: column;
     grid-area: header;
-    border: solid 2px black;
-    font-size: 30px;
+    font-size: 45px;
     
 }
 main{
+    font-size: 22px;
     grid-area: main;
-    border: solid 2px rgb(209, 29, 29);
     padding: 150px;
 }
 section{
@@ -71,15 +78,36 @@ section{
 }
 
 .content-card-especificao{
+    
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    padding-top: 10px;
     column-gap:20px ;
 }
 .content-card-especificao div{
-    border: solid 1px black;
+    
+    box-shadow: 
+        -10px 7px 30px rgba(233, 30, 99, 0.2), 
+        10px -7px 30px rgba(255, 152, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: solid 1px rgb(255, 255, 255, 0.1 );
+    border-radius: 5px;
     height: 200px;
     width: 350px;
+    padding-top: 10px;
+}
+.content-card-especificao div:hover{
+    box-shadow: 
+        -15px 10px 50px rgba(233, 30, 99, 0.4), 
+        15px -10px 50px rgba(255, 152, 0, 0.4);
+        transform: scale(1.05);
+        
+        
+        
+
 
 }
 #preso-cont{
@@ -89,8 +117,9 @@ section{
     flex-direction: column;
 }
 .content-card-precos{
-
-    border: #080c03 solid;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: solid 1px rgb(255, 255, 255, 0.1 );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,14 +129,34 @@ section{
     height: 650px;
 }
 .content-card-precos ul li{
+
+    color: #A1A1AA;;
     margin: 6px;
     padding: 10px
 }
-.content-card-precos span{
+.butao-edit{
+    cursor:pointer ;
+    background: linear-gradient( to right,  #E91E63 ,#FF9800);
     display: flex;
+    position: relative;
+    left: 57px;
     justify-content: center;
+    width: 300px;
     align-items: center;
+    border-radius: 120px;
+    height: 70px;
     margin-top: 76px;
+    transition: transform 0.3s;
+    transition: box-shadow 0.3s;
+    transition: filter 0.3s;
+    
+}
+.butao-edit:hover{
+    filter: brightness(1.2);
+    transform: scale(1.05);
+    box-shadow: 
+        -15px 10px 50px rgba(233, 30, 99, 0.4), 
+        15px -10px 50px rgba(255, 152, 0, 0.4);
 }
 
 footer{

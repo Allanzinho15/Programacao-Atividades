@@ -6,7 +6,7 @@ frm.addEventListener("submit", (e) => {
 
     const velocidadePermitida = Number(frm.inVelocidadePermitida.value);
     const velocidadeComdutor = Number(frm.inVelocidadeComdutor.value);
-    const multaLeve = velocidadePermitida + (velocidadePermitida * 0.20);
+    const multaLeve = velocidadePermitida * 1.2
     
 
     if(velocidadeComdutor <= velocidadePermitida){

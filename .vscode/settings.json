@@ -1,0 +1,5 @@
+{
+    "editor.renderWhitespace": "selection",
+    "editor.experimentalWhitespaceRendering": "svg",
+    "workbench.reduceTransparency": "off"
+}
