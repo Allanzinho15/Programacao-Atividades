@@ -1,18 +1,4 @@
 @charset "UTF-8";
-:root{
-    --text: #141906;
-    --background: #f8fcf3;
-    --primary: #a2d232;
-    --secondary: #8ae5cd;
-    --accent: #5cc2db;
-}
-:root[data-theme="dark"] {
-    --text: #f4f9e6;
-    --background: #080c03;
-    --primary: #9dcd2d;
-    --secondary: #1a755d;
-    --accent: #248aa3;
-}
 *{
     margin: 0;
     padding: 0;
@@ -24,6 +10,7 @@ h1, h2, h3{
     background: linear-gradient(to right, #E91E63 ,#FF9800);
     background-clip: text ;
     color: transparent;
+    margin-bottom: 16px;
 }
 p{
     color: #A1A1AA;
@@ -32,9 +19,9 @@ body{
     background: #09090B;
     display: grid;
     grid-template-areas:
-    'header header header header'
-    'main main main main'
-    'footer footer footer footer';
+    'header'
+    'main '
+    'footer ';
 }
 
 header{
@@ -44,36 +31,36 @@ header{
     align-items: center;
     flex-direction: column;
     grid-area: header;
-    font-size: 45px;
+    font-size: 48px;
     
 }
 main{
-    font-size: 22px;
+    font-size: 16px;
     grid-area: main;
-    padding: 150px;
+    padding: 80px;
 }
 section{
     /* height: 100vh; */
-    margin-top: 200px;
+    margin-top: 160px;
 }
 .imagensDasStreamings img{
-    height: 150px;
-    width: 150px;
-    border-radius: 100px;
-    margin: 15px;
+    height: 160px;
+    width: 160px;
+    border-radius: 80px;
+    margin: 16px;
 }
 .imagensDasStreamings{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 25px;
+    margin-top: 32px;
 }
 .content-text{
     display: flex ;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
+    margin: 16px;
     font-size: 24px;
 }
 
@@ -83,8 +70,8 @@ section{
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding-top: 10px;
-    column-gap:20px ;
+    padding-top: 16px;
+    column-gap:24px ;
 }
 .content-card-especificao div{
     
@@ -94,10 +81,10 @@ section{
     transition: transform 0.3s, box-shadow 0.3s;
     background-color: rgba(255, 255, 255, 0.05);
     border: solid 1px rgb(255, 255, 255, 0.1 );
-    border-radius: 5px;
+    border-radius: 8px;
     height: 200px;
-    width: 350px;
-    padding-top: 10px;
+    width: 352px;
+    padding: 24px;
 }
 .content-card-especificao div:hover{
     box-shadow: 
@@ -117,35 +104,35 @@ section{
     flex-direction: column;
 }
 .content-card-precos{
-    border-radius: 15px;
+    border-radius: 16px;
     background-color: rgba(255, 255, 255, 0.05);
     border: solid 1px rgb(255, 255, 255, 0.1 );
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 35px;
-    margin-top: 35px;
-    width: 550px;
-    height: 650px;
+    font-size: 32px;
+    margin-top: 40px;
+    width: 544px;
+    height: 640px;
 }
 .content-card-precos ul li{
 
     color: #A1A1AA;;
-    margin: 6px;
-    padding: 10px
+    margin-bottom: 8px;
+    padding: 16px
 }
 .butao-edit{
     cursor:pointer ;
     background: linear-gradient( to right,  #E91E63 ,#FF9800);
     display: flex;
     position: relative;
-    left: 57px;
+    left: 40px;
     justify-content: center;
-    width: 300px;
+    width: 296px;
     align-items: center;
-    border-radius: 120px;
-    height: 70px;
-    margin-top: 76px;
+    border-radius: 32px;
+    height: 64px;
+    margin-top: 80px;
     transition: transform 0.3s;
     transition: box-shadow 0.3s;
     transition: filter 0.3s;
