@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ArquivoCSS/ex8_2.css">
+</head>
+<body>
+    <img src="img/ex8_2.jpg" alt="" class="normal">
+    <h1>Revenda Avenida - Promoção</h1>
+    <form action="">
+        <p><label for="inModelo">Modelo do veiculo:</label> <input type="text" name="inModelo" id="inModelo"></p>
+        
+        <p><label for="inAno">Ano de Fabricação:</label> <input type="number" name="inAno" id="inAno"></p>
+        
+        <p><label for="inPreco">Preço R$: </label> <input type="number" name="inPreco" id="inPreco" step="0.01" required min="0"></p>
+
+        <input type="submit" value="Classificar - Calcular Entrada e Parcelas">
+    </form>
+    <h3 id="outResp1"></h3>
+    <h3 id="outResp2"></h3>
+    <h3 id="outResp3"></h3>
+</body>
+<script src="ArquivoJS/ex8_2.js"></script>
+</html>
